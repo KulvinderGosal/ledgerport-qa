@@ -1,0 +1,23 @@
+{
+    "name": "ledgerport-qa",
+    "version": "1.0.0",
+    "description": "Playwright automated QA test suite for LedgerPort staging site",
+    "scripts": {
+          "test": "playwright test",
+          "test:headed": "playwright test --headed",
+          "test:ui": "playwright test --ui",
+          "test:report": "playwright show-report",
+          "test:chrome": "playwright test --project=chromium",
+          "test:firefox": "playwright test --project=firefox",
+          "test:safari": "playwright test --project=webkit",
+          "test:mobile": "playwright test --project=mobile-chrome"
+    },
+    "devDependencies": {
+          "@playwright/test": "^1.44.0",
+          "@types/node": "^20.0.0",
+          "typescript": "^5.0.0"
+    },
+    "engines": {
+          "node": ">=18.0.0"
+    }
+}
